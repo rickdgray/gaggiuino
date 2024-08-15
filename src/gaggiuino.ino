@@ -62,7 +62,7 @@ void setup(void) {
 
   // Initialize LED
   led.begin();
-  led.setColor(9u, 0u, 9u); // WHITE
+  led.setColor(255u, 0u, 0u); // Red because it's my favorite :)
   // Init the tof sensor
   tof.init(currentState);
 
@@ -95,7 +95,7 @@ void setup(void) {
   LOG_INFO("Setup sequence finished");
 
   // Change LED colour on setup exit.
-  led.setColor(9u, 0u, 9u); // 64171
+  led.setColor(255u, 0u, 0u); // Red because it's my favorite :)
 
   iwdcInit();
 }
